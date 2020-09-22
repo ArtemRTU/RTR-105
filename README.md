@@ -15,7 +15,7 @@ Basic Linux command:
 11. ~$ - to change shall
 12.ls -l - to see permisions of users
 13.ls -a - to see all folders even hidden 
-
+14. sh - to change shell
 Hot keys:
 1.Ctrl + Alt + T - to launch terminal
 2.Button up - 
