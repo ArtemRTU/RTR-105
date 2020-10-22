@@ -5,13 +5,13 @@ Computer Studies (basic course)(1),20/21-R" learning platform
 
  main()
 {
-    int a , b , c;
+     long int a , b , c;
     printf("Enter 100000\n");
-    scanf("%d&a");
+    scanf("%ld",&a);
     printf("Enter 400000\n");
-    scanf("%d&b");
-    c = (a + b);
-    printf("%d\n",c);
+    scanf("%ld",&b);
+    c = (a * b);
+    printf("%ld\n",c);
    
     
     return 0;
