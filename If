@@ -11,10 +11,15 @@ if(order==A);
 {
     if(a>b);
     {
-        if(b>c);
+        if(b>c)
         {
-            printf("%c ,%c , %c", a ,b ,c);
+            printf("%c , %c , %c", a , b ,c);
+        
         }
+        else
+            {
+            printf("%c , %c , %c", a , c ,b);    
+            }
     }
 }
     return 0;
