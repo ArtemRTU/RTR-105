@@ -4,7 +4,7 @@ int main()
 {
     char a , b , c , order , A , O , Order;
     printf("Enter 3 letters:\n");
-    scanf("%c , %c , %c" , &a ,&b ,&c);
+    scanf("%c  %c  %c" , &a ,&b ,&c);
     printf("Choose the order. A-Alphabet , O-Oposite:\n");
     scanf(" %c",  &order);
 if(order==A);
