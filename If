@@ -1,26 +1,52 @@
+
 #include <stdio.h>
 
-int main()
+
+int
+main ()
 {
-    char a , b , c , order , A , O , Order;
-    printf("Enter 3 letters:\n");
-    scanf("%c  %c  %c" , &a ,&b ,&c);
-    printf("Choose the order. A-Alphabet , O-Oposite:\n");
-    scanf(" %c",  &order);
-if(order==A);
-{
-    if(a>b);
+  char a, b, c, order, A, O, Order;
+  printf ("Enter 3 letters:\n");
+  scanf ("%c  %c  %c", &a, &b, &c);
+  printf ("Choose the order. A-Alphabet , O-Oposite:\n");
+  scanf (" %c", &order);
+  if (order == A);
+  {
+    if (a > b)
     {
-        if(b>c)
-        {
-            printf("%c , %c , %c", a , b ,c);
-        
-        }
-        else
-            {
-            printf("%c , %c , %c", a , c ,b);    
-            }
+      if (b > c)
+	{
+	  printf ("%c , %c , %c", c, b, a);
+
+	}
+      else
+	{
+	  printf ("%c , %c , %c", b, c, a);
+	}
     }
-}
-    return 0;
+	else if (b > a)
+	{
+	 if (a > c)
+	 {
+	     printf ("%c ,%c , %c", c, a ,b);
+	}
+	else
+	{
+	    printf ("%c , %c , %c", a, c, b);
+	    
+	}
+	else {
+	    if (a > b){
+	        printf("%c , %c , %c", b, a, c);
+	    }
+	    else{
+	        printf("%c , %c , %c", a, b, c);
+	    }
+	}
+    }
+  
+
+  }
+ 
+  return 0;
 }
