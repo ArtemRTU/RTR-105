@@ -33,7 +33,7 @@ main ()
 	else
 	{
 	    printf ("%c , %c , %c", a, c, b);
-	    
+	}
 	}
 	else {
 	    if (a > b){
@@ -44,9 +44,10 @@ main ()
 	    }
 	}
     }
+   
   
 
-  }
+  
  
-  return 0;
+   return 0;
 }
