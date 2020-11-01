@@ -1,53 +1,85 @@
-
 #include <stdio.h>
 
-
-int
-main ()
+int main()
 {
-  char a, b, c, order, A, O, Order;
+ char a, b, c, order, A, O;
   printf ("Enter 3 letters:\n");
   scanf ("%c  %c  %c", &a, &b, &c);
   printf ("Choose the order. A-Alphabet , O-Oposite:\n");
   scanf (" %c", &order);
-  if (order == A);
+  if ( order = A )
   {
-    if (a > b)
-    {
-      if (b > c)
-	{
-	  printf ("%c , %c , %c", c, b, a);
-
-	}
-      else
-	{
-	  printf ("%c , %c , %c", b, c, a);
-	}
-    }
-	else if (b > a)
-	{
-	 if (a > c)
-	 {
-	     printf ("%c ,%c , %c", c, a ,b);
-	}
-	else
-	{
-	    printf ("%c , %c , %c", a, c, b);
-	}
-	}
-	else {
-	    if (a > b){
-	        printf("%c , %c , %c", b, a, c);
-	    }
-	    else{
-	        printf("%c , %c , %c", a, b, c);
-	    }
-	}
-    }
-   
+    if (a>b && a>c)
+     {
+       if (b>c)
+       {
+        printf("%c,%c,%c", c,b,a);   
+       } 
+       else
+       {
+        printf("%c,%c,%c", b,c,a);
+       } 
+     }  
+     else if (a>b && c>a)
+     {
+         printf("%c,%c,%c", b,a,c); 
+     }
+     
+     
+     if (b>a && b>c)
+     {
+       if (a>c)
+       {
+        printf("%c,%c,%c", c,a,b);   
+       } 
+       else
+       {
+        printf("%c,%c,%c", a,c,b);
+       } 
+     }  
+     else if (b>a && c>b)
+     {
+         printf("%c,%c,%c", a,b,c); 
+     }
+  }
+   else 
+   {
+    if (a>b && a>c)
+     {
+       if (b>c)
+       {
+        printf("%c,%c,%c", a,b,c);   
+       } 
+       else
+       {
+        printf("%c,%c,%c", a,c,b);
+       } 
+     }  
+     else if (a>b && c>a)
+     {
+         printf("%c,%c,%c", c,a,b); 
+     }
+     
+     
+     if (b>a && b>c)
+     {
+       if (a>c)
+       {
+        printf("%c,%c,%c", b,a,c);   
+       } 
+       else
+       {
+        printf("%c,%c,%c", b,c,a);
+       } 
+     }  
+     else if (b>a && c>b)
+     {
+         printf("%c,%c,%c", c,b,a); 
+     }
+   }
   
+    return 0;
+   }
+  // it works only for oposite for now and i dont understend why
 
-  
- 
-   return 0;
-}
+
