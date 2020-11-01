@@ -26,7 +26,6 @@ int main()
      }
      
      
-    
      if (b>a && b>c)
      {
        if (a>c)
@@ -42,10 +41,7 @@ int main()
      {
          printf("%c,%c,%c", a,b,c); 
      }
-  
-  
-  
-   else if (order == O)
+   else if (order == O);
    {
     if (a>b && a>c)
      {
@@ -55,28 +51,31 @@ int main()
        } 
        else
        {
-        printf("%c,%c,%c", b,c,a);
+        printf("%c,%c,%c", a,c,b);
        } 
      }  
      else if (a>b && c>a)
      {
-         printf("%c,%c,%c", b,a,c); 
+         printf("%c,%c,%c", c,a,b); 
      }
      
      
-    
      if (b>a && b>c)
      {
        if (a>c)
        {
-        printf("%c,%c,%c", c,a,b);   
+        printf("%c,%c,%c", b,a,c);   
        } 
        else
        {
-        printf("%c,%c,%c", a,c,b);
+        printf("%c,%c,%c", b,c,a);
        } 
      }  
      else if (b>a && c>b)
      {
-         printf("%c,%c,%c", a,b,c); 
+         printf("%c,%c,%c", c,b,a); 
      }
+   }
+  }
+    return 0;
+   }
