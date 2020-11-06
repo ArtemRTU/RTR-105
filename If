@@ -2,12 +2,12 @@
 
 int main()
 {
- char a, b, c, order, A, O;
+ char a, b, c, order;
   printf ("Enter 3 letters:\n");
   scanf ("%c  %c  %c", &a, &b, &c);
   printf ("Choose the order. A-Alphabet , O-Oposite:\n");
   scanf (" %c", &order);
-  if ( order = A )
+  if ( order == 'A' )
   {
     if (a>b && a>c)
      {
