@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+int a , i , f=1;
+char d;
+printf("Enter one decimal number\n");
+scanf("%d", &a);
+printf("Select data type:\nchar-c , int-i , long long-l\n");
+scanf(" %c", &d);
+    for(i=1;i<=a;i++)
+    
+    {
+        f=f*1;
+    }
+
+printf("Factorial of your number is:%d\n", f);
+
+    return 0;
+   }
+  
