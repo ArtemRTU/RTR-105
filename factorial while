@@ -1,0 +1,80 @@
+#include <stdio.h>
+
+int main()
+{
+int a;
+char d;
+printf("Enter one decimal number\n");
+scanf("%d", &a);
+printf("Select data type:\nchar-c , int-i , long long-l\n");
+scanf(" %c", &d);
+    if(d=='c')
+    {
+    char i=1 ,f=1,f2=1;
+    while(i<=a)
+    {
+        f=f*i;
+         i++;
+      }i=1;
+    while(i<=a-1)
+      {
+        f2=f2*i;
+       i++;
+       }
+      if(f/f2 == a)
+        {
+                printf("Factorial of your number is:%d\n", f);
+        }
+       else
+        {
+            printf("Incorrect data type for a number");
+        }
+    }
+if(d=='i')
+    {
+    int i=1 ,f=1,f2=1;
+    while(i<=a)
+    {
+        f=f*i;
+        i++;
+    }
+      i=1;
+    while(i<=a-1)
+      {
+        f2=f2*i;
+        i++;
+      }
+      if(f/f2 == a)
+        {
+                printf("Factorial of your number is:%d\n", f);
+        }
+       else
+        {
+            printf("Incorrect data type for a number");
+        }
+    }
+
+    if(d=='l')
+    {
+    long long i=1 ,f=1,f2=1;
+    while(i<=a)
+    {
+        f=f*i;
+         i++;
+      }i=1;
+    while(i<=a-1)
+      {
+        f2=f2*i;
+         i++;
+      }
+      if(f/f2 == a)
+        {
+                printf("Factorial of your number is:%d\n", f);
+        }
+       else
+        {
+            printf("Incorrect data type for a number");
+        }
+    }
+    return 0;
+   }
