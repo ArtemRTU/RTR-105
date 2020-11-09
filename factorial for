@@ -1,22 +1,75 @@
-
 #include <stdio.h>
 
 int main()
 {
-int a , i , f=1;
+int a;
 char d;
 printf("Enter one decimal number\n");
 scanf("%d", &a);
 printf("Select data type:\nchar-c , int-i , long long-l\n");
 scanf(" %c", &d);
-    for(i=1;i<=a;i++)
-    
+    if(d=='c')
     {
+    char i ,f=1,f2=1;
+    for(i=1;i<=a;i++)
+      {
         f=f*i;
+      }
+    for(i=1;i<=a-1;i++)
+      {
+        f2=f2*i;
+      }
+      if(f/f2 == a)
+        {
+                printf("Factorial of your number is:%d\n", f);
+        }
+       else
+        {
+            printf("Incorrect data type for a number");
+        }
     }
 
-printf("Factorial of your number is:%d\n", f);
+     if(d=='i')
+    {
+    int i ,f=1,f2=1;
+    for(i=1;i<=a;i++)
+      {
+        f=f*i;
+      }
+    for(i=1;i<=a-1;i++)
+      {
+        f2=f2*i;
+      }
+      if(f/f2 == a)
+        {
+                printf("Factorial of your number is:%d\n", f);
+        }
+       else
+        {
+            printf("Incorrect data type for a number");
+        }
+    }
+     if(d=='l')
+    {
+    long long i ,f=1,f2=1;
 
+    for(i=1;i<=a;i++)
+      {
+        f=f*i;
+      }
+    for(i=1;i<=a-1;i++)
+      {
+        f2=f2*i;
+      }
+      if(f/f2 == a)
+        {
+                printf("Factorial of your number is:%d\n", f);
+        }
+       else
+        {
+            printf("Incorrect data type for a number");
+        }
+    }
     return 0;
    }
-  
+
