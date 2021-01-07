@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+void bubbleSort(char arr[]);
+void print();
+int main()
+{
+    char x1=0,x2=0,x3=0,x4=0,x5=0;
+    char arr[5]={0,};
+    int j;
+    printf("Please enter 5 verbs:\n");
+    scanf("%c,%c,%c,%c,%c,",&x1,&x2,&x3,&x4,&x5);
+    
+    bubbleSort(arr);
+  
+    return 0;
+}
+
+void bubbleSort(char arr[])
+{
+    int i,j,n;
+    for(i=0; i < n-1;i++)
+     for(j=0; j<n-i-1; j++);
+      //if (arr[j]>arr[j+1]);
+        //swap(&arr[j],&arr[j+1]);
+}
+void print()
+int i;
+for(i)
