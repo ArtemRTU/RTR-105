@@ -1,28 +1,87 @@
-#include <stdio.h>
 
-void bubbleSort(char arr[]);
-void print();
-int main()
+#include <stdio.h> 
+
+void swap(char* xp, char *yp) 
 {
-    char x1=0,x2=0,x3=0,x4=0,x5=0;
-    char arr[5]={0,};
-    int j;
-    printf("Please enter 5 verbs:\n");
-    scanf("%c,%c,%c,%c,%c,",&x1,&x2,&x3,&x4,&x5);
-    
-    bubbleSort(arr);
+    char temp = *xp;
+    *xp = *yp;
+    *yp = temp;
+} 
   
-    return 0;
-}
+// A function to implement bubble sort 
+void bubbleSort(char arr[], int n) 
+{ 
+   int i; 
+   int j;
+   for (i = 0; i < n-1; i++)       
+  
+       // Last i elements are already in place    
+       for (j = 0; j < n-i-1; j++)  
+           if (arr[j] > arr[j+1]) 
+              swap(&arr[j], &arr[j+1]); 
+} 
+  
+/* Function to print an array */
+void printArray(char arr[], int size) 
+{ 
+    int i; 
+    for (i = 0; i < size; ++i) 
+        printf("'%c' ", arr[i]); 
+    printf("\n"); 
+} 
+  
+// Driver program to test above functions 
+int main() 
+{ 
+    
+    //char x1=0,x2=0,x3=0,x4=0,x5=0;
+    char arr[5]={0,};
 
-void bubbleSort(char arr[])
+    printf("Please enter 5 letters:\n");
+    //scanf("%c,%c,%c,%c,%c,",&arr[0],&arr[1],&arr[2],&arr[3],&arr[4]);
+    scanf("%s", &arr[0]);
+    
+    int n = sizeof(arr)/sizeof(arr[0]); 
+    bubbleSort(arr, n); 
+  
+    printf("Sorted array:\n"); 
+    printArray(arr, n); 
+    minimal(arr,n);
+    maximal(arr,n);
+    avg(arr,n);
+    return 0; 
+} 
+void minimal( char arr[], int i, int n)
 {
-    int i,j,n;
-    for(i=0; i < n-1;i++)
-     for(j=0; j<n-i-1; j++);
-      //if (arr[j]>arr[j+1]);
-        //swap(&arr[j],&arr[j+1]);
+    int min;
+    min = arr[0];
+    for(i = 1; i < n; i++)
+    if(arr[i] > min)
+        min = arr[i];
+        printf("Last letter is:%c\n", min);
+
+    
 }
-void print()
-int i;
-for(i)
+void maximal( char arr[], int i, int n)
+{
+    int max;
+    max = arr[0];
+    for(i = 1; i < n; i++)
+    if(arr[i] < max)
+        max = arr[i];
+        printf("First letter is:%c\n", max);
+
+    
+}
+void avg(char arr[], int i, int n)
+{
+    int S=0;
+    float avg;
+    for(i = 0; i < n; i++)
+    S = S + arr[i];
+    avg = S / n;
+    printf("Average letter is:%c ", avg);
+    
+    
+    
+}
